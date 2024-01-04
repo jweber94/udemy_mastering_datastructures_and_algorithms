@@ -3,4 +3,9 @@
 .bash_history
 .viminfo
 .gitconfig
-./devcontainer/.*
+.devcontainer/.onCreateCommandMarker
+.devcontainer/.postCreateCommandMarker
+.devcontainer/.postStartCommandMarker
+.devcontainer/.updateContentCommandMarker
+build/
+.local/
