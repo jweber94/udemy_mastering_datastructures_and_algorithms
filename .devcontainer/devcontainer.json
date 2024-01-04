@@ -1,0 +1,18 @@
+{
+    "build": { "dockerfile": "../docker/Dockerfile" },
+    "customizations": {
+        "vscode": {
+          "extensions": ["streetsidesoftware.code-spell-checker"]
+        }
+      },
+      "runArgs": [
+          "--userns=keep-id",
+          "-v",
+          "C:/Users/jens1/.gitconfig:/home/dev/.gitconfig"
+      ],
+      "containerEnv": {
+        "HOME": "/workspaces/udemy_cpp_algorithms_and_datastructures"
+      },
+      "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+      "forwardPorts": [3000]
+}
