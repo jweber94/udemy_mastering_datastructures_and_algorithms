@@ -9,3 +9,6 @@
 .devcontainer/.updateContentCommandMarker
 build/
 .local/
+.gnupg/
+.devcontainer/
+.vscode/
